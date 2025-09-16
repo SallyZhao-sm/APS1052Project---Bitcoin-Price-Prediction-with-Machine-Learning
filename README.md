@@ -1,35 +1,28 @@
 # APS1052Project---Bitcoin-Price-Prediction-with-Machine-Learning
 
-This project extends Case Study 1 (Stock Price Prediction) from Chapter 5 of *Machine Learning and Data Science Blueprints for Finance* by Tatsat, applying supervised learning techniques to predict Bitcoin returns.
+This project implements and compares portfolio optimization and risk management methods using Python. The work combines optimization techniques, Monte Carlo simulation, and data visualization to evaluate investment strategies.
 
-## Problem Setup
-- **Target**: Bitcoin (BTC-USD) 5-day log returns
-- **Features**: 
-  - Technical indicators from OHLCV
-  - Macroeconomic indices (S&P500, Dow Jones, VIX)
-  - ETFs (SPY, GLD)
-  - Company stocks (IBM, GOOGL, MSFT)
-- **Period**: 2010–2024
-
-## Pipeline
-- Data preprocessing: cleaning, normalization, feature creation
-- Feature selection: mutual information & recursive elimination
-- Model comparison: Linear Regression, Random Forest, XGBoost
-- Evaluation:
-  - Statistical metrics: RMSE, R²
-  - Financial metrics: Sharpe Ratio, CAGR
-- Bias control:
-  - Bootstrapping for variance estimation
-  - Monte Carlo permutation & White Reality Check
+## Methods
+- Portfolio optimization:
+  - Mean-Variance Optimization (MVO)
+  - Robust Mean-Variance Optimization
+  - Risk Parity Allocation
+- Risk analysis:
+  - Monte Carlo simulation of portfolio returns
+  - Value-at-Risk (VaR) and Conditional VaR (CVaR)
+- Computational tools:
+  - Gradient Descent and Interior Point Methods for optimization
+  - Python libraries: NumPy, pandas, matplotlib
 
 ## Results
-- XGBoost outperformed linear models in predictive accuracy
-- Trading simulations showed positive equity growth
-- Sharpe ratio improved with additional macro features
-- White Reality Check confirmed robustness against overfitting
+- MVO achieved higher short-term returns but exposed the portfolio to higher volatility
+- Robust MVO reduced downside risk and stabilized performance under uncertainty
+- Risk Parity provided the most balanced allocation across assets
+- Monte Carlo simulations validated the tradeoff between return and tail risk
+- Visualizations included cumulative wealth curves and comparative risk metrics
 
 ## Skills Demonstrated
-- Machine learning pipeline automation (Scikit-learn, XGBoost)
-- Financial feature engineering
-- Risk-adjusted backtesting (Sharpe, CAGR)
-- Bootstrapping & Monte Carlo methods to validate results
+- Financial optimization and portfolio theory
+- Risk modeling with Monte Carlo simulation
+- Python programming for numerical computation
+- Data visualization of risk-return tradeoffs
