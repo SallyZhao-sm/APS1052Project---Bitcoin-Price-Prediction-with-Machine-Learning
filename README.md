@@ -1,4 +1,4 @@
-# APS1052Project---Bitcoin-Price-Prediction-with-Machine-Learning
+# APS1052Project---Computational Methods in Finance
 
 This project implements and compares portfolio optimization and risk management methods using Python. The work combines optimization techniques, Monte Carlo simulation, and data visualization to evaluate investment strategies.
 
